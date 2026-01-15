@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Time Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            color: #333;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 800px;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+            font-weight: bold;
+        }
+        tr.low-hours {
+            background-color: #ffcccc;
+        }
+        tr:hover:not(.low-hours) {
+            background-color: #f5f5f5;
+        }
+        td:last-child {
+            text-align: right;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Employee Time Report</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Total Time Worked</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Patrick Huthinson</td>
+                <td>212h 7m</td>
+            </tr>
+            <tr>
+                <td>Abhay Singh</td>
+                <td>207h 39m</td>
+            </tr>
+            <tr>
+                <td>Stewart Malachi</td>
+                <td>197h 50m</td>
+            </tr>
+            <tr>
+                <td>John Black</td>
+                <td>197 hours</td>
+            </tr>
+            <tr>
+                <td>Mary Poppins</td>
+                <td>167h 54m</td>
+            </tr>
+            <tr>
+                <td>Tim Perkinson</td>
+                <td>163h 10m</td>
+            </tr>
+            <tr>
+                <td>Kavvay Verma</td>
+                <td>158h 7m</td>
+            </tr>
+            <tr>
+                <td>Rita Alley</td>
+                <td>112h 10m</td>
+            </tr>
+            <tr class="low-hours">
+                <td>Raju Sunuwar</td>
+                <td>95h 39m</td>
+            </tr>
+            <tr class="low-hours">
+                <td>Tamoy Smith</td>
+                <td>86h 46m</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
